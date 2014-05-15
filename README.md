@@ -20,5 +20,6 @@ Next up (potential):
 
 #### Notes:
 
+* The bitcoind rpc password is stored in the config file - fine for development, don't use it in production.
 * To rebuild development environment, run ``rebuild``
 * To shut down, run ``stop``

@@ -1,13 +1,22 @@
 ## Repository of Bitcoin experiments
 
-Repository of various bitcoin experiments
+Repository of various bitcoin experiments. Currently:
+
+* Spins up Ubuntu 14.04 LTS box
+* Installs docker, sets up a ``bitcoind`` container
+
+Next up (potential):
+
+* Setup torrent container to automate downloading of full blockchain (?)
+* Setup nodejs development environment (w/ nginx) using bitcore library (?)
+* Setup angular front end app to facilitate some real time blockchain analysis (?)
 
 
 #### Setting up development environment
 
-* Install [Vagrant](http://www.vagrantup.com/) v1.6.1
+* Install [Vagrant](http://www.vagrantup.com/) v1.6.1 on host machine
 * Run ``start`` from command line
-* Open up ``http://localhost:4000`` in browser
+
 
 #### Notes:
 

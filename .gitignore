@@ -3,3 +3,4 @@ elasticsearch/data/elasticsearch/*
 elasticsearch/data/logs/*
 logstash/logs/*
 .vagrant/
+*.sw*

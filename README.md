@@ -36,3 +36,6 @@ More to come.
 * Support Vagrant for local development (use testnet by default)
 * CoreOS + etcd + fleet looks like an interesting combination long term - would allow btc-box to scale to multiple instances
 * Running ``apt-get update`` on each container slows down build process, consider removing it
+* Find a way to automatically restart container when it fails
+* Find a way to automatically route logs from containers to logstash
+* Ensure that /var/log/* is being logged to logstash

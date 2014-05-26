@@ -9,6 +9,7 @@ curl -s https://get.docker.io/ubuntu/ | sudo sh
 ./elasticsearch.sh
 ./logstash.sh
 ./kibana.sh
+./insight.sh
 
 ./provision-collectd.sh
 

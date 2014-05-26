@@ -25,3 +25,14 @@ cd btc-box
 When this is complete, open a web browser to your server's IP and you'll be able to see realtime analytics of the box displayed via Kibana. Visit port 3000 to explore the blockchain based on a local database using Insight.
 
 More to come.
+
+### Ideas for improvement
+
+* Load up a sensible default dashboard into Kibana upon installation [btc-box-dashboard](https://gist.github.com/alexbain/18f83ac40a1369224173)
+* Centralize configuration, allow for ability to use testnet or livenet programatically
+* Reverse proxy elasticsearch behind nginx, close port 9200 to outside
+* Reverse proxy insight behind nginx, close port 3000 to outside
+* Run an nginx container and find way to provide configuration files for each container needing a reverse proxy
+* Support Vagrant for local development (use testnet by default)
+* CoreOS + etcd + fleet looks like an interesting combination long term - would allow btc-box to scale to multiple instances
+* Running ``apt-get update`` on each container slows down build process, consider removing it

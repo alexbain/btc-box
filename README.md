@@ -1,19 +1,19 @@
 btc-box
 =======
 
-Collection of Docker containers that work together to form a bitcoin development environment.
+This repository will spin up a collection of Docker containers that work together to form a bitcoin development environment. Tested using DigitalOcean VPS.
 
-Currently, that consists of:
+Currently, this repostiroy creates the following containers:
 
-* bitcoind - runs full bitcoin-qt core, exposes json-rpc port
-* elasticsearch - analyze all logs all services and box is producing
-* logstash - aggregator of logs
-* kibana - UI on top of logs, available at port 80
-* insight - RESTful API on top of bitcoind w/ UI to explore blockchain, available at port
+* [bitcoind](https://bitcoin.org/en/) - full bitcoin-qt core, exposes json-rpc port
+* [logstash](http://logstash.net/) - aggregates logs from all containers and host
+* [elasticsearch](http://www.elasticsearch.org/) - ingests all logs, provides way to search and analyze
+* [kibana](http://www.elasticsearch.org/overview/kibana/) - AngularJS UI on top of elasticsearch, available at port 80 to monitor box
+* [insight](http://insight.is/) - RESTful API on top of bitcoind w/ UI to explore blockchain, available at port
 
 ### Installation
 
-On a brand new Ubuntu 14.04 x64 box (minimum 40GB HDD and 2GB RAM), run the following commands:
+On a fresh Ubuntu 14.04 x64 box (minimum 40GB HDD and 2GB RAM), run the following commands as root:
 
 ```
 apt-get install -y git
@@ -22,7 +22,7 @@ cd btc-box
 ./provision.sh
 ```
 
-When this is complete, open a web browser to your server's IP and you'll be able to see realtime analytics of the box displayed via Kibana. Visit port 3000 to explore the blockchain based on a local database using Insight.
+When this is complete, open a web browser to your server's IP and you'll be able to see realtime analytics of the box and the bitcoin network displayed via Kibana. You an also explore the blockchain using an indexed database on port 3000. Insight exposes a RESTful API you may want to use for any bitcoin/blockchain applications you want to create. If you want to load a sensible dashboard for Kibana - I have used [btc-box-dashboard](https://gist.github.com/alexbain/18f83ac40a1369224173) before.
 
 More to come.
 
@@ -41,3 +41,6 @@ More to come.
 * Ensure that /var/log/* is being logged to logstash
 * Elasticsearch endpoints used for writing data should require HTTP basic auth, at a minimum
 
+### Disclaimer
+
+Do not use btc-box to store bitcoins. It is not intended to be used as a wallet. This project is designed to provide a strong foundation you can use to build bitcoin based applications.

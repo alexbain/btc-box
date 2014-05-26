@@ -9,7 +9,7 @@ Currently, this repostiroy creates the following containers:
 * [logstash](http://logstash.net/) - aggregates logs from all containers and host
 * [elasticsearch](http://www.elasticsearch.org/) - ingests all logs, provides way to search and analyze
 * [kibana](http://www.elasticsearch.org/overview/kibana/) - AngularJS UI on top of elasticsearch, available at port 80 to monitor box
-* [insight](http://insight.is/) - RESTful API on top of bitcoind w/ UI to explore blockchain, available at port
+* [insight](http://insight.is/) - RESTful API on top of bitcoind w/ UI to explore blockchain, available at port 3000
 
 ### Installation
 

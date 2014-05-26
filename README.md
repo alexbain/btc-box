@@ -13,7 +13,7 @@ Currently, that consists of:
 
 ### Installation
 
-On a brand new Ubuntu 14.04 x64 box, run the following commands:
+On a brand new Ubuntu 14.04 x64 box (minimum 40GB HDD and 2GB RAM), run the following commands:
 
 ```
 apt-get install -y git
@@ -22,6 +22,6 @@ cd btc-box
 ./provision.sh
 ```
 
-When this is complete, open a web browser to your server's IP and you'll be able to see realtime analytics of the box. Visit port 3000 to explore the blockchain based on a local database.
+When this is complete, open a web browser to your server's IP and you'll be able to see realtime analytics of the box displayed via Kibana. Visit port 3000 to explore the blockchain based on a local database using Insight.
 
 More to come.

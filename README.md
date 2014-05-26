@@ -39,3 +39,5 @@ More to come.
 * Find a way to automatically restart container when it fails
 * Find a way to automatically route logs from containers to logstash
 * Ensure that /var/log/* is being logged to logstash
+* Elasticsearch endpoints used for writing data should require HTTP basic auth, at a minimum
+

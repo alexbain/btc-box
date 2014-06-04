@@ -1,4 +1,5 @@
-docker build -t kibana kibana/
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
 docker stop kibana
 docker rm kibana
-docker run -d -p 80:80 --link elasticsearch:elasticsearch --name kibana kibana nginx -c /etc/nginx/nginx.conf
+docker run -v $DIR/kibana:/kibana --name kibana busybox true

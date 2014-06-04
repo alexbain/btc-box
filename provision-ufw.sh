@@ -1,6 +1,13 @@
+# reset everything
+ufw reset
+
 # lock everything down on eth0
 ufw default deny incoming on eth0
 ufw default deny outgoing on eth0
+
+# lock everything down on eth1
+# ufw default deny incoming on eth1
+# ufw default deny outgoing on eth1
 
 # docker0 is internal and should be unrestricted
 ufw default allow incoming on docker0
@@ -16,16 +23,16 @@ ufw allow in on eth0 to any port 80 proto tcp
 ufw allow out on eth0 to any port 80 proto tcp
 
 # Expose insight
-ufw allow in on eth0 to any port 3000 proto tcp
-ufw allow out on eth0 to any port 3000 proto tcp
+# ufw allow in on eth0 to any port 3000 proto tcp
+# ufw allow out on eth0 to any port 3000 proto tcp
 
 # Expose bitcoind communication port
 ufw allow in on eth0 to any port 8333 proto tcp
 ufw allow out on eth0 to any port 8333 proto tcp
 
 # Expose elasticsearch (needed by Kibana)
-ufw allow in on eth0 to any port 9200 proto tcp
-ufw allow out on eth0 to any port 9200 proto tcp
+# ufw allow in on eth0 to any port 9200 proto tcp
+# ufw allow out on eth0 to any port 9200 proto tcp
 
 # Enable all ufw rules
 ufw enable

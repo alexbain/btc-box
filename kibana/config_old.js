@@ -6,7 +6,7 @@
  */
 define(['settings'],
 function (Settings) {
-  "use strict";
+  
 
   /** @scratch /configuration/config.js/2
    *
@@ -29,7 +29,7 @@ function (Settings) {
      *  +elasticsearch: {server: "http://localhost:9200", withCredentials: true}+
      *
      */
-    elasticsearch: "http://"+window.location.hostname+"/es/",
+    elasticsearch: "http://"+window.location.hostname+":9200",
 
     /** @scratch /configuration/config.js/5
      *

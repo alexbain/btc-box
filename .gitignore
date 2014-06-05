@@ -2,6 +2,6 @@ bitcoind/data/*
 elasticsearch/data/elasticsearch/*
 elasticsearch/data/logs/*
 logstash/logs/*
-insight/db/*
+insight-db/*
 .vagrant/
 *.sw*

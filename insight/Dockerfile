@@ -9,7 +9,7 @@ RUN (wget https://github.com/bitpay/insight/archive/v0.1.12.tar.gz && tar zxf v0
 
 RUN cd /insight
 WORKDIR /insight
-VOLUME ["/insight/db"]
+# VOLUME ["/insight/db"]
 
 RUN npm install
 

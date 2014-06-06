@@ -1,4 +1,4 @@
-bitcoind/data/*
+bitcoind-data/*
 elasticsearch/data/elasticsearch/*
 elasticsearch/data/logs/*
 logstash/logs/*

@@ -15,4 +15,4 @@ RUN         apt-get install -y db4.8
 EXPOSE      8332 8333
 
 # start up bitcoin server
-CMD         ["bitcoind", "-conf=/bitcoind/bitcoind.conf", "-datadir=/bitcoind/data"]
+# CMD         ["bitcoind", "-conf=/bitcoind/bitcoind.conf", "-datadir=/bitcoind/data"]

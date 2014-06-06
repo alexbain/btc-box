@@ -5,6 +5,7 @@ curl -s https://get.docker.io/ubuntu/ | sudo sh
 
 ./swap.sh
 
+./bitcoind-data.sh
 ./bitcoind.sh
 ./elasticsearch.sh
 ./logstash.sh

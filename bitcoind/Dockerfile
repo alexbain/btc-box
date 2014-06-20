@@ -12,7 +12,8 @@ RUN         apt-get install -y bitcoind
 RUN         apt-get install -y db4.8
 
 # expose RPC port, port to connect to servers
-EXPOSE      8332 8333
+EXPOSE      8332 
+EXPOSE      8333
 
 # start up bitcoin server
 # CMD         ["bitcoind", "-conf=/bitcoind/bitcoind.conf", "-datadir=/bitcoind/data"]
